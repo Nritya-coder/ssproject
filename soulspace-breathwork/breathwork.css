@@ -1,0 +1,11 @@
+/* ==========================================================================
+   SoulSpace — Breathwork Stylesheet
+   Spiritual Wellness Aesthetic (Warm Ivory, Sage Green, Muted Lavender)
+   ========================================================================== */
+
+@import url("style.css");
+
+/* Header adjustment for single logo */
+.header-container {
+  justify-content: flex-start;
+}

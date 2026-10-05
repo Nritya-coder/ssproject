@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SoulSpace — Spiritual Wellness Hub</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --bg: #FAF7F2;
+      --card-bg: #FFFFFF;
+      --primary: #557158;
+      --primary-dark: #435C46;
+      --text: #1B362A;
+      --text-muted: #62766A;
+      --border: #E2E7DF;
+      --font-serif: 'Cormorant Garamond', Georgia, serif;
+      --font-sans: 'Plus Jakarta Sans', -apple-system, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: var(--font-sans);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+
+    .hub-container {
+      max-width: 960px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .brand-logo {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+
+    .brand-name {
+      font-size: 1.4rem;
+      font-weight: 600;
+      letter-spacing: 0.22em;
+      color: var(--text);
+    }
+
+    .kicker {
+      font-size: 0.8rem;
+      letter-spacing: 0.3em;
+      font-weight: 600;
+      color: var(--primary);
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    .title {
+      font-family: var(--font-serif);
+      font-size: 3.2rem;
+      font-weight: 500;
+      margin-bottom: 12px;
+      line-height: 1.15;
+    }
+
+    .subtitle {
+      color: var(--text-muted);
+      font-size: 1.1rem;
+      margin-bottom: 48px;
+      max-width: 540px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+      text-align: left;
+    }
+
+    .practice-card {
+      background-color: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 32px 28px;
+      text-decoration: none;
+      color: inherit;
+      box-shadow: 0 12px 32px rgba(40, 56, 44, 0.05);
+      transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .practice-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 18px 44px rgba(40, 56, 44, 0.1);
+      border-color: var(--primary);
+    }
+
+    .card-icon {
+      font-size: 2.2rem;
+      margin-bottom: 18px;
+      line-height: 1;
+    }
+
+    .card-title {
+      font-family: var(--font-serif);
+      font-size: 1.7rem;
+      font-weight: 600;
+      margin-bottom: 8px;
+      color: var(--text);
+    }
+
+    .card-desc {
+      color: var(--text-muted);
+      font-size: 0.92rem;
+      line-height: 1.5;
+      margin-bottom: 24px;
+      flex-grow: 1;
+    }
+
+    .card-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--primary);
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+
+    .practice-card:hover .card-btn {
+      color: var(--primary-dark);
+    }
+
+    footer {
+      margin-top: 60px;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+    }
+  </style>
+</head>
+<body>
+
+  <main class="hub-container">
+    <div class="brand-logo">
+      <svg width="40" height="30" viewBox="0 0 42 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M21 2C21 2 15 12 15 19C15 23 18 26 21 26C24 26 27 23 27 19C27 12 21 2 21 2Z" stroke="#486350" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M21 26C15 26 8 20 6 15C11 14 17 17 20 22" stroke="#486350" stroke-width="1.6" stroke-linecap="round"/>
+        <path d="M21 26C27 26 34 20 36 15C31 14 25 17 22 22" stroke="#486350" stroke-width="1.6" stroke-linecap="round"/>
+      </svg>
+      <span class="brand-name">SOULSPACE</span>
+    </div>
+
+    <p class="kicker">Spiritual Wellness</p>
+    <h1 class="title">Pause. Breathe. Reflect.</h1>
+    <p class="subtitle">Select a mindful practice to begin your journey inward.</p>
+
+    <div class="cards-grid">
+      <!-- 1. Meditation -->
+      <a href="soulspace-meditation/meditation.html" class="practice-card">
+        <div>
+          <div class="card-icon">🧘</div>
+          <h2 class="card-title">Meditation</h2>
+          <p class="card-desc">Find your stillness with calming countdown timers, ambient soundscapes, and gentle breath guidance.</p>
+        </div>
+        <div class="card-btn">Open Meditation &rarr;</div>
+      </a>
+
+      <!-- 2. Breathwork -->
+      <a href="soulspace-breathwork/breathwork.html" class="practice-card">
+        <div>
+          <div class="card-icon">💨</div>
+          <h2 class="card-title">Breathwork</h2>
+          <p class="card-desc">Practice Box Breathing (4-4-4) and Slow Breathing (5-0-5) with synchronized visualizer rings.</p>
+        </div>
+        <div class="card-btn">Open Breathwork &rarr;</div>
+      </a>
+
+      <!-- 3. Yoga & Movement -->
+      <a href="soulspace-yoga/yoga.html" class="practice-card">
+        <div>
+          <div class="card-icon">🌿</div>
+          <h2 class="card-title">Yoga & Movement</h2>
+          <p class="card-desc">Gentle movement practices, desk stretches, and step-by-step routines to restore your body with care.</p>
+        </div>
+        <div class="card-btn">Open Movement &rarr;</div>
+      </a>
+    </div>
+
+    <footer>
+      SoulSpace &bull; HTML5 &bull; CSS3 &bull; Vanilla JavaScript
+    </footer>
+  </main>
+
+</body>
+</html>
